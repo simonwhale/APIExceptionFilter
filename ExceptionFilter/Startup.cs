@@ -42,7 +42,7 @@ namespace ExceptionFilter
             }
 
             app.UseHttpsRedirection();
-            app.UseMiddleware(typeof(ExceptionHandling));
+            app.UseMiddleware(typeof(ExceptionHandlingMiddleware));
             app.UseMvc();
         }
     }
